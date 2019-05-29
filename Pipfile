@@ -6,8 +6,14 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 black = "*"
-
-[packages]
+autopep8 = "*"
+pytest = "*"
+pytest-cov = "*"
+mypy = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
+
+[script]
+test = "pytest -v --cov=src"
+fix = "autopep8 -ivr ./src"
