@@ -14,6 +14,7 @@ mypy = "*"
 [requires]
 python_version = "3.7"
 
-[script]
-test = "pytest -v --cov=src"
+[scripts]
+test = "pytest -v -s --cov=src"
 fix = "autopep8 -ivr ./src"
+fixtest = "autopep8 -ivr ./tests"

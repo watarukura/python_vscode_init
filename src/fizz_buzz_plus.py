@@ -1,7 +1,7 @@
 class FizzBuzzPlus:
 
     @staticmethod
-    def answer(number):
+    def answer(number: int) -> str:
         text = ''
         if number % 3 == 0:
             text += 'Fizz'
