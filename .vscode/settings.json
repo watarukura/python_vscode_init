@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "venv/bin/python",
+    "python.pythonPath": ".venv/bin/python",
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
@@ -10,5 +10,5 @@
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "black",
     "editor.formatOnPaste": false,
-    "python.linting.flake8Args": ["--max-line-length", "88"],
+    "python.linting.flake8Args": ["--max-line-length", "88", "--exclude", ".venv/*"],
 }

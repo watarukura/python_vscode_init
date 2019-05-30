@@ -15,6 +15,11 @@ mypy = "*"
 python_version = "3.7"
 
 [scripts]
-test = "pytest -v -s --cov=src"
+test = "pytest --verbose -s --cov=src ./tests"
 fix = "autopep8 -ivr ./src"
 fixtest = "autopep8 -ivr ./tests"
+lint = "flake8 ./src"
+linttest = "flake8 ./tests"
+
+[pipenv]
+allow_prereleases = true
