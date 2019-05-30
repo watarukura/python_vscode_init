@@ -6,9 +6,9 @@ class FizzBuzzPlus:
             text += "Fizz"
         if number % 5 == 0:
             text += "Buzz"
-        if str(number).find("3") > -1:
+        if "3" in str(number):
             text += "Fizz"
-        if str(number).find("5") > -1:
+        if "5" in str(number):
             text += "Buzz"
         if text == "":
             text = str(number)
