@@ -9,4 +9,4 @@ def test_fizz_buzz():
     assert "Buzz" in FizzBuzzPlus().answer(10)
     assert "Buzz" in FizzBuzzPlus().answer(51)
     assert "Buzz" in FizzBuzzPlus().answer(58)
-    assert "7" in FizzBuzzPlus().answer(7)
+    assert "7" == FizzBuzzPlus().answer(7)
