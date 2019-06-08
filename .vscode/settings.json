@@ -7,8 +7,7 @@
         "**/venv/**": true
     },
     "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
+    "python.linting.blackEnabled": true,
     "python.formatting.provider": "black",
-    "editor.formatOnPaste": false,
-    "python.linting.flake8Args": ["--max-line-length", "88", "--exclude", ".venv/*"],
+    "editor.formatOnPaste": false
 }
