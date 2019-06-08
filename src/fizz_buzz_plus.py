@@ -1,6 +1,12 @@
 class FizzBuzzPlus:
     @staticmethod
     def answer(number: int) -> str:
+        """Fizz or Buzzを判定する
+        Args:
+            number: integer input
+        Returns:
+            str: Fizz or Buzz or Number as string
+        """
         text = ""
         if number % 3 == 0:
             text += "Fizz"
@@ -15,7 +21,10 @@ class FizzBuzzPlus:
         return text
 
 
-if __name__ == "__main__":
-    fizz_or_buzz_or_other = FizzBuzzPlus()
+def main():
     for i in range(1, 101):
-        print(fizz_or_buzz_or_other.answer(i))
+        print(FizzBuzzPlus().answer(i))
+
+
+if __name__ == "__main__":
+    main()
