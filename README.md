@@ -5,7 +5,7 @@
 
 ## 前提
 - python3
-    - python3.6以上を使う
+    - python3.7以上を使う
 - pyenv
     - bashrc:
       ```bash
