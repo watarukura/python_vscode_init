@@ -1,27 +1,35 @@
 {
-    "python.pythonPath": "/Users/kurashimawataru/src/github.com/watarukura/python_vscode_project_template/.venv/bin/python3.7",
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/**": true,
-        "**/venv/**": true
-    },
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.blackEnabled": true,
-    "python.formatting.provider": "black",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
-    "[python]": {
-      "editor.tabSize": 4,
-      "editor.formatOnSave": true,
-      "editor.formatOnPaste": true,
-      "editor.formatOnType": false,
-      "editor.insertSpaces": true
+    "editor.formatOnType": false,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
     },
-    "python.testing.pytestArgs": [
-      "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true
+  },
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+  "python.linting.mypyArgs": [
+    "--config-file", "mypy.ini"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "-vv",
+    "--show-capture=all",
+    "tests"
+  ],
+  "autoDocstring.docstringFormat": "google",
 }
